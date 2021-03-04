@@ -5,19 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
   </head>
 
   <body>
-    <header>
-      logo-img
-      loupe-img
-      <button>
-        menu-img
-      </button>
-      <a href="#">person-img</a>
-      <a href="#">cart-img</a>
-      <nav>
+    <header class="header">
+      <div class="container">
+          <div class="header__wrapper">
+            <div class="header__controls">
+              <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+              <img src="./img/loup.svg" alt="loup" width="26" height="27">
+            </div>
+            <div class="header__controls">
+              <button class="header__button">
+                <img src="./img/loup.svg" alt="loup" width="26" height="27">
+              </button>
+              <a class="header__person-link" href="#"><img src="./img/loup.svg" alt="loup" width="26" height="27"></a>
+              <a href="#"><img src="./img/loup.svg" alt="loup" width="26" height="27"></a>
+            </div>
+        </div>
+      </div>
+      <nav class="header__navigation">
         MENU
         <ul>
           <li>
@@ -51,27 +63,28 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Shop - desciption</h1>
-        man-img
-        <h1>the brand of luxerious fashion </h1>
+      <section class="brand">
+        <img src="./img/man.jpg" alt="man" width="800" height="765">
+        <div class="brand__title-wrapper">
+          <h1 class="brand__tittle">the brand <span class="brand__subtitle">of luxerious <span class="brand__subtitle-pink">fashion</span></span></h1>
+        </div>  
       </section>
-      <section>
-        <h2>Offers</h2>
-        <ul>
-          <li>
+      <section class="offers container">
+        <h2 class="visually-hidden">Offers</h2>
+        <ul class="offers__list">
+          <li class="offers__item offers__item--woman">
             <h3>30% off</h3>
             <p>for women</p>
           </li>
-          <li>
+          <li class="offers__item offers__item--man">
             <h3>30% off</h3>
             <p>for women</p>
           </li>
-          <li>
+          <li class="offers__item offers__item--kds">
             <h3>30% off</h3>
             <p>for women</p>
           </li>
-          <li>
+          <li class="offers__item offers__item--accesories">
             <h3>30% off</h3>
             <p>for women</p>
           </li>

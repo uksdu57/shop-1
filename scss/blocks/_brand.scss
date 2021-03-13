@@ -1,0 +1,69 @@
+.brand {
+    display: flex;
+    margin: 0 0 64px;
+
+    @include tablet {
+        margin: 0 0 20px;
+    }
+
+    @include mobile {
+        height: 363px;
+        margin: 0 0 64px;
+    }
+
+    .brand__img {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__title-wrapper {
+        background-color: $light-pink;
+        padding: 0 0 0 4%;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+
+        @include tablet {
+            padding: 0 0 0 5%;
+        }
+
+        @include mobile {
+            padding: 0;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        @include font-settings (900, 48px, 58px);
+        text-transform: uppercase;
+        display: block;
+        border-left: 12px solid $pink;
+        padding: 0 0 0 16px;
+
+        @include tablet {
+            @include font-settings (900, 44px, 53px);
+        }
+
+        @include mobile425 {
+            @include font-settings (900, 38px, 46px);
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        @include font-settings (700, 37px, 44px);
+
+        @include tablet {
+            @include font-settings (700, 24px, 29px);
+        }
+
+        @include mobile425 {
+            @include font-settings (700, 20px, 24px);
+        }
+    }
+
+    &__subtitle-pink {
+        color: $pink;
+    }
+}

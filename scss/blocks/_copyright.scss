@@ -1,0 +1,48 @@
+.copyright {
+    min-height: 79px;
+    background-color: $very-dark-blue;
+    color: $milk;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    @include mobile {
+        height: 143px;
+    }
+
+    &__content {
+        @include flex-center-sb;
+
+        @include tablet {
+            padding: 0 17px;
+        }
+
+        @include mobile {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        min-width: 148px;
+
+        @include mobile {
+            margin: 43px 0 40px;
+        }
+    }
+
+    &__link {
+        width: 32px;
+        height: 31px;
+        color: $black;
+        background-color: $white;
+        @include flex-center-center;
+    }
+
+    &__link:hover {
+        background-color: $pink;
+        color: $white;
+    }
+}

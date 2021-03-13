@@ -1,24 +1,32 @@
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-    clip: rect(0 0 0 0)
-}
-
-body {
-    font-family: Lato;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 38px;
-
-}
-
-.container {
-    width: 1138px;
-    margin: 0 auto;
-}
+$white: #FFFFFF;
+$milk: #FBFBFB;
+$dark-blue: #222222;
+$very-dark-blue: #222224;
+$very-light-pink: #E1E1E1;
+$mercury: #E2E2E2;
+$light-pink: #F1E4E6;
+$pink: #F16D7F;
+$dark-pink: #F26376;
+$bittersweet: #FF6A6A;
+$silver-chalice:#A4A4A4;
+$brown: #474040;
+$tundora: #4A4A4A;
+$wild-sand: #F5F3F3;
+$soft-peach: #F8F3F4;
+$light-grey: #F8F8F8;
+$grey: #9F9F9F;
+$input-grey: #B1B1B1;
+$darker-grey: #6F6E6E;
+$dove-grey: #656565;
+$scorpion: #575757;
+$dark-grey: #5D5D5D;
+$gallery: #EAEAEA;
+$black: #000000;
+$desktop1280: 1280px;
+$tablet1024: 1024px;
+$tablet960: 960px;
+$tablet: 768px;
+$tablet750: 750px;
+$tablet600: 600px;
+$mobile425: 425px;
+$mobile: 375px;

@@ -1,0 +1,87 @@
+body {
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.container {
+    margin: 0 auto;
+    width: 71%;
+
+    @include desktop1280 {
+        width: 86%;
+    }
+
+    @include tablet1024 {
+        width: 94%;
+    }
+
+    @include tablet {
+        width: 96%;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+  }
+
+.white-pink-button {
+    color: $dark-pink;
+    background-color: $white;
+    border: 1px solid $bittersweet;
+    font-family: Lato;
+}
+
+.white-pink-button:hover {
+    background-color: $pink;
+    border: 1px solid $bittersweet;
+    color: $white;
+}
+
+.close-button {
+    border: none;
+    background-color: $white;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.close-button:hover {
+    border: 1px solid $black;
+}
+
+.close-button:active {
+    outline: none;
+    background-color: $dark-grey;
+}
+
+.svg:hover {
+    filter: invert(25%);
+}
+
+.heading {
+    height: 148px;
+    display: flex;
+    align-items: center;
+    background-color: $soft-peach;
+
+    &__title {
+        text-transform: uppercase;
+        color: $pink;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: normal;
+
+        @include tablet600 {
+            text-align: center;
+        }
+    }
+}

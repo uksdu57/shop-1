@@ -1,0 +1,108 @@
+.header {
+    background-color: $dark-blue;
+    position: relative;
+
+    &__wrapper {
+        @include flex-center-sb;
+        min-height: 75px;
+
+        @include tablet {
+            padding: 0 16px 0 16px;
+        }
+
+        @include mobile {
+            padding: 0 9px 0 9px;
+        }
+    }
+
+    &__logo {
+        margin: 0 41px 0 0;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: none;
+        margin: 0 34px 0 0;
+
+        @include mobile {
+            margin: 0;
+        }
+    }
+
+    &__login {
+        margin: 0 33px 0 0;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .header__cart-link {
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__navigation {
+        display: none;    
+        font-size: 14px;
+        line-height: 17px;
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        left: 0px;
+    }
+
+    &__navigation-wrapper {
+        display: flex;
+    }
+
+    &__navigation-overlay {
+        flex-grow: 1;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    &__navigation-menu {
+        background-color: $white;
+        padding: 16px 16px 0 34px;
+        display: flex;
+        flex-direction: column;
+        width: 232px;
+        height: 764px;
+        box-sizing: border-box;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    }
+
+    &__navigation-button {
+        height: 12px;
+        align-self: flex-end;
+    }
+
+    &__navigation-title {
+        text-transform: uppercase;
+        font-weight: 700;
+        display: block;
+        margin: 9px 0 4px;
+    }
+
+    &__navigation-section {
+        margin: 20px 0 0 0;
+    }
+
+    &__navigation-subtitle {
+        text-transform: uppercase;
+        color: $pink;
+        margin: 0 0 12px 0;
+    }
+
+    &__navigation-link {
+        color: $darker-grey;
+        text-decoration: none;
+        display: block;
+        margin: 0 0 11px 22px;
+    }
+}
+
+.display-block {
+    display: block;
+}

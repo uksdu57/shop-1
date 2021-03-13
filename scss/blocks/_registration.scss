@@ -1,0 +1,147 @@
+.registration {
+    padding: 64px 0 96px;
+    font-weight: 300;
+
+    @include tablet {
+        padding: 40px 0 96px;
+    }
+
+    @include mobile {
+        padding: 40px 0 100px;
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet600 {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+        margin: 0 11% 0 0;
+        color: $dark-blue;
+
+        @include tablet {
+            margin: 0 3% 0 0;
+        }
+
+        @include tablet600 {
+            margin: 0 0 40px;
+        }
+    }
+
+    &__input {
+        width: 360px;
+        height: 45px;
+        box-sizing: border-box;
+        border: 1px solid $silver-chalice;
+        margin: 21px 0 0 0;
+        padding: 13px 0 16px 17px;
+    }
+
+    &__input:hover {
+        background-color: $light-pink;
+    }
+
+    &__radio {
+        display: flex;
+        margin: 32px 0 33px;
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    &__radio-input {
+        display: none;
+    }
+
+    &__radio-label {    
+        display: flex;
+        align-items: center;
+        height: 17px;
+        margin: 0 20px 0 0;
+    }
+
+    &__radio-label::before {
+        content: url(../images/circle.svg);
+        margin: 0 10px 0 0;
+    }
+
+    &__radio-input:checked+ &__radio-label::before{
+        background-image: url(../images/BlackDot.svg);
+        background-size: 75%;
+        background-repeat: no-repeat;
+        background-position: center, center;
+    }
+
+    &__password-security {
+        display: block;
+        font-size: 13px;
+        line-height: 16px;
+        color: $input-grey;
+        margin: 16px 0 39px;
+    }
+
+    &__button {
+        width: 167px;
+        height: 50px;
+        @include font-settings (400, 14px, 17px);
+        text-transform: uppercase;
+        border: 1px solid $bittersweet;
+        background-color: $white;
+        color: $pink;
+        box-sizing: border-box;
+        @include flex-center-center;
+    }
+
+    &__button-text {
+        display: block;
+        margin: 0 20px 0 0;
+    }
+
+    &__button:hover {
+        background-color: $pink;
+        color: $white;
+    }
+
+    &__info {
+        font-size: 24px;
+        line-height: 29px;
+
+        @include tablet {
+            @include font-settings (300, 16px, 19px);
+        }
+    }
+
+    &__info-title {
+        text-transform: uppercase;
+        @include font-settings (300, 24px, 29px);
+
+        @include tablet {
+            @include font-settings (300, 16px, 19px);
+        }
+    }
+
+    &__info-text {
+        display: block;
+        margin: 22px 0 21px 0;
+
+        @include tablet {
+            margin: 32px 0 22px 0;
+        }
+    }
+
+    &__info-item {
+        margin: 0 0 16px 0;
+    }
+
+    &__info-item::before {
+        content: url(../images/check.svg);
+        margin: 0 22px 0 0;
+    }
+}

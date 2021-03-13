@@ -1,0 +1,216 @@
+.cart-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 96px 0 129px;
+
+    @include tablet960 {
+        flex-direction: column;
+        align-items: center;
+        margin: 59px 0 129px;
+    }
+}
+
+.cart-list {
+    width: 57%;
+
+    @include tablet960 {
+        width: 100%;
+    }
+
+    &__product {
+        display: flex;
+        margin: 0 0 40px;
+        box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
+    }
+
+    &__product-img {
+        display: flex;
+    }
+
+    &__product-content {
+        padding: 22px 22px 0 31px;
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+    &__product-close {
+        height: 18px;
+        margin: 6px 0 0 0;
+    }
+
+    &__product-title {
+        color: $dark-blue;
+        @include font-settings (400, 24px, 29px);
+        text-transform: uppercase;
+        margin: 0 0 42px;
+        display: block;
+        width: 67%;
+    }
+
+    &__product-text {
+        @include font-settings (400, 22px, 26px);
+        color: $scorpion;
+        margin: 0 0 6px;
+
+        &_quantity {
+            display: flex;
+        }
+    }
+
+    &__product-value {
+        color: $dove-grey;
+    }
+
+    &__product-quantity {
+        @include flex-center-center;
+        width: 43px;
+        height: 24px;
+        color: $dove-grey;
+        margin: 0 0 0 24px;
+        border: 1px solid $gallery;
+    }
+    
+    &__button-wrapper {
+        margin: 73px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet960 {
+            width: 69%;
+            margin: 63px auto 65px;
+            align-self: center;
+        }
+    }
+
+    &__button {
+        border: 1px solid $silver-chalice;
+        width: 235px;
+        height: 50px;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include flex-center-center;
+        color: $black;
+        background-color: $white;
+        @include font-settings (300, 14px, 17px);
+        box-sizing: border-box;
+        font-family: Lato;
+    }
+
+    &__button:hover {
+        background-color: $silver-chalice;
+        color: $white;
+    }
+}
+
+.cart_pink-text {
+    color: $pink;
+}
+
+.cart-form {
+    display: flex;
+    flex-direction: column;
+    padding: 17px 0 0 0;
+
+    @include tablet960 {
+        width: 100%;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-title {
+        @include font-settings (300, 16px, 19px);
+        text-transform: uppercase;
+        color: $dark-blue;
+        margin: 0 0 21px 0;
+    }
+
+    &__form-input {
+        width: 359px;
+        height: 44px;
+        border: 1px solid $silver-chalice;
+        padding: 13px 0 16px 17px;
+        margin: 0 0 21px 0;
+        @include font-settings (300, 13px, 16px);
+        color: $input-grey;
+        box-sizing: border-box;
+    }
+
+    &__form-button {
+        font-family: Lato;
+        @include font-settings (300, 11px, 13px);
+        text-transform: uppercase;
+        background-color: $white;
+        border: 1px solid $silver-chalice;
+        width: 100px;
+        height: 34px;
+        margin: 4px 0 0 0;
+        box-sizing: border-box;
+    }
+
+    &__form-button:hover {
+        background-color: $silver-chalice;
+        color: $white;
+    }
+
+    &__checkout {
+        display: flex;
+        flex-direction: column;
+        padding: 39px 34px 42px;
+        background-color: $wild-sand;
+        margin: 58px 0 0 0;
+
+        @include tablet960 {
+            width: 360px;
+            box-sizing: border-box;
+            margin: 40px 0 0 0;
+        }
+    }
+
+    &__sub-total {
+        text-transform: uppercase;
+        @include font-settings (400, 11px, 13px);
+        color: $tundora;
+        align-self: flex-end;
+    }
+
+    &__grand-total {
+        text-transform: uppercase;
+        @include font-settings (300, 16px, 19px);
+        color: $dark-blue;
+        align-self: flex-end;
+        margin: 12px 3px 21px;
+    }
+
+    &__checkout-amount {
+        margin: 0 0 0 24px;
+    }
+
+    &__checkout-hr {
+        border: none;
+        height: 1px;
+        width: 275px;
+        color: $mercury;
+        background-color: $mercury;
+        align-self: center;
+    }
+
+    &__checkout-button {
+        margin: 17px 0 0 0;
+        box-sizing: border-box;
+        width: 273px;
+        height: 50px;
+        text-transform: uppercase;
+        align-self: center;
+    }
+}
+
+.grand-total__pink {
+    font-weight: 700;
+}
